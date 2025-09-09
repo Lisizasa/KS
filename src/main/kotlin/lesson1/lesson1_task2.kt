@@ -10,5 +10,6 @@ fun main() {
     var numberOfWorkers: Int = 2000
     //    println(numberOfWorkers)
     numberOfWorkers -= 1
+
     println(numberOfWorkers)
 }
