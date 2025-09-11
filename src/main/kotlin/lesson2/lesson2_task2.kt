@@ -8,8 +8,7 @@ fun main(){
 
     val constantCost: Int = numberOfWorkers * salaryOfWorkers
     val allCost: Int = constantCost + numberOfIntern * salaryOfIntern
-    val averageSalary: Int = (salaryOfWorkers * numberOfWorkers + salaryOfIntern * numberOfIntern) /
-            (numberOfWorkers + numberOfIntern)
+    val averageSalary: Int = allCost / (numberOfWorkers + numberOfIntern)
 
     println(numberOfWorkers)
     println(numberOfIntern)
