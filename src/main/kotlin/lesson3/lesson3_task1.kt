@@ -7,5 +7,4 @@ fun main() {
 
     println(greetingDay)
     println(greetingEvening)
-
 }
