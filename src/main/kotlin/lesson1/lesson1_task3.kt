@@ -1,16 +1,18 @@
 package lesson1
 
-import java.text.DecimalFormat
+import kotlin.math.min
 
 fun main() {
     val year: Int = 1961
-    var hour: Int = 9
-    var minute: Int = 7
+    var hour: Int
+    var minute: Int
 
+    hour = 9
+    minute = 7
 
     println("year = $year")
-    println("hour = ${DecimalFormat("00").format(hour)}")
-    println("minute = ${DecimalFormat("00").format(minute)}")
+    println("hour = $hour")
+    println("minute = $minute")
 
     hour = 10
     minute = 55
