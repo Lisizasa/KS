@@ -4,11 +4,12 @@ fun main() {
     val departureHour: Int = 9
     val departureMinute: Int = 39
     val travelTime: Int = 457
-    val hoursDivider = 60
-    val minutesDivider = 60
 
-    val arrivalHour: Int = departureHour + travelTime / hoursDivider
-    val arrivalMinute: Int = (departureMinute + travelTime) % minutesDivider
+    val arrivalTimeInMinutes: Int = departureHour * MINUTES_IN_HOUR + departureMinute + travelTime
 
-    println("Время прибытия: $arrivalHour:$arrivalMinute")
+    val arrivalHour: Int = arrivalTimeInMinutes / MINUTES_IN_HOUR
+    val arrivalMinute: Int = arrivalTimeInMinutes % MINUTES_IN_HOUR
+
+    println(String.format("Время прибытия: %02d:%02d", arrivalHour, arrivalMinute))
 }
+const val MINUTES_IN_HOUR = 60
